@@ -1,29 +1,21 @@
-# Create React Express App
+$ npm install
+Start your node server
+run the command below
 
-## About This Boilerplate
+$ npm run dev
+Use http://localhost:3001 as base url for endpoints
+API Endpoints
+METHOD	DESCRIPTION	ENDPOINTS
+POST	Add a record	/api/v1/records
+GET	Get all the records	/api/v1/records
+PUT	Update the details of a book	/api/v1/records/:recordId
+GET	Get a book particular book	/api/v1/records/:recordId
+DELETE	Remove a book	/api/v1/records/:recordId
+Tests
+Run test for all endpoints
+run the command below
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+$ npm run build
+builds in create-react-app client folder
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
-
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following command:
-
-```
-npm install
-```
-
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+$ npm run test
