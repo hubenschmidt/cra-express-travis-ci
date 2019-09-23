@@ -16,7 +16,7 @@ module.exports = {
     operatorsAliases: false
   },
   test: {
-    username: "postgres",
+    username: "postgres_test",
     password: null,
     database: "travis_ci_boilerplate_test",
     host: "127.0.0.1",
