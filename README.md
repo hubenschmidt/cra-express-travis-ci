@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/hubenschmidt/cra-express-travis-ci.svg?branch=master)](https://travis-ci.org/hubenschmidt/cra-express-travis-ci)
 
-$ npm install
+** npm install
 Start your node server
 run the command below
 
-$ npm run dev
+** npm run dev
 Use http://localhost:3001 as base url for endpoints
 API Endpoints
 METHOD	DESCRIPTION	ENDPOINTS
@@ -17,7 +17,7 @@ Tests
 Run test for all endpoints
 run the command below
 
-$ npm run build
+** npm run build
 builds in create-react-app client folder
 
-$ npm run test
+** npm run test
