@@ -14,7 +14,7 @@ env:
   - NODE_ENV=test
 
 before_script:
-  - psql -c 'create database travis-ci-boilerplate;' -U postgres
+  - psql -c 'create database travis_ci_boilerplate_test;' -U postgres
   - psql -c "CREATE USER postgres WITH PASSWORD null;" -U postgres
   - npm run build
   - npm install -g sequelize-cli
