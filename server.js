@@ -1,5 +1,8 @@
+// const config = require("dotenv");
 // const express = require("express");
+// const bodyParser = require("body-parser")
 // const path = require("path");
+// const recordRoutes = require('./routes/RecordRoutes');
 // const PORT = process.env.PORT || 3001;
 // const app = express();
 

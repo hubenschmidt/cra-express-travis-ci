@@ -1,6 +1,5 @@
 import RecordService from '../services/RecordService';
 import Util from '../utils/Utils';
-console.log(RecordService)
 
 const util = new Util();
 
@@ -21,7 +20,6 @@ class RecordController {
   }
 
   static async addRecord(req, res) {
-    console.log(req.body)
     if (!req.body.title || !req.body.price || !req.body.description) {
       util.setError(400, 'Please provide complete details');
       return util.send(res);
