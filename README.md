@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hubenschmidt/cra-express-travis-ci.svg?branch=master)](https://travis-ci.org/hubenschmidt/cra-express-travis-ci)
+
 $ npm install
 Start your node server
 run the command below
