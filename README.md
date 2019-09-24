@@ -3,7 +3,7 @@
 # cra-express-travis-ci
 
 ## Description
-Boilerplate for React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha.
+React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha.
 
 ## How to run the application:
 
