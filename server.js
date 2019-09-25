@@ -3,7 +3,7 @@
 // const bodyParser = require("body-parser")
 // const path = require("path");
 // const recordRoutes = require('./routes/RecordRoutes');
-// const PORT = process.env.PORT || 3001;
+// const PORT = process.env.PORT;
 // const app = express();
 
 import config from 'dotenv';
@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001
 
 //set up routes
 app.use('/api/v1/records', recordRoutes);
