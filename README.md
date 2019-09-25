@@ -3,7 +3,7 @@
 # cra-express-travis-ci
 
 ## Description
-React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Travis CI, Mocha.
+React application + RESTful API with NodeJS, Express, PostgreSQL, Sequelize, Mocha, Travis CI, Coveralls.
 
 ## How to run the application:
 
