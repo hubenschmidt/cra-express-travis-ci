@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/hubenschmidt/cra-express-travis-ci.svg?branch=master)](https://travis-ci.org/hubenschmidt/cra-express-travis-ci)
 
+[![Coverage Status](https://coveralls.io/repos/github/hubenschmidt/cra-express-travis-ci/badge.svg?branch=master)](https://coveralls.io/github/hubenschmidt/cra-express-travis-ci?branch=master)
+
 # cra-express-travis-ci
 
 ## Description
