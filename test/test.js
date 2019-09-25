@@ -1,9 +1,16 @@
-import chai from "chai";
-import chatHttp from "chai-http";
-import "chai/register-should";
-import app from "../server.js";
+// import chai from "chai";
+// import chaiHttp from "chai-http";
+// import "chai/register-should";
+// import app from "../server.js";
 
-chai.use(chatHttp);
+const chai = require("chai");
+const chaiHttp = require("chai-http")
+const app = require('../server.js');
+require("chai/register-should")
+
+console.log(app)
+
+chai.use(chaiHttp);
 const { expect } = chai;
 
 describe("Testing the record endpoints:", () => {

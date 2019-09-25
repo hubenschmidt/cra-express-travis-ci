@@ -1,4 +1,6 @@
-import database from '../models';
+// import database from '../models';
+
+const database = require('../models');
 
 class RecordService {
   static async getAllRecords() {
@@ -63,4 +65,5 @@ class RecordService {
   }
 }
 
-export default RecordService;
+// export default RecordService;
+module.exports = RecordService;

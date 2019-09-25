@@ -1,5 +1,8 @@
-import RecordService from '../services/RecordService';
-import Util from '../utils/Utils';
+// import RecordService from '../services/RecordService';
+// import Util from '../utils/Utils';
+
+const RecordService = require('../services/RecordService');
+const Util = require("../utils/Utils");
 
 const util = new Util();
 
@@ -103,4 +106,5 @@ class RecordController {
   }
 }
 
-export default RecordController;
+// export default RecordController;
+module.exports = RecordController;

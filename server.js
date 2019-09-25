@@ -1,15 +1,13 @@
-// const config = require("dotenv");
-// const express = require("express");
-// const bodyParser = require("body-parser")
-// const path = require("path");
-// const recordRoutes = require('./routes/RecordRoutes');
-// const PORT = process.env.PORT;
-// const app = express();
+const config = require("dotenv");
+const express = require("express");
+const bodyParser = require("body-parser")
+const path = require("path");
+const recordRoutes = require('./routes/RecordRoutes');
 
-import config from 'dotenv';
-import express from 'express';
-import bodyParser from 'body-parser';
-import recordRoutes from './routes/RecordRoutes';
+// import config from 'dotenv';
+// import express from 'express';
+// import bodyParser from 'body-parser';
+// import recordRoutes from './routes/RecordRoutes';
 
 config.config();
 
@@ -44,4 +42,6 @@ app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
 
-export default app;
+// export default app;
+
+module.exports = app;

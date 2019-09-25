@@ -35,4 +35,4 @@ deploy:
 after_success:
   - npm run coverage
   - ./node_modules/.bin/jscoverage lib lib-cov
-  - ./node_modules/.bin/mocha -R esm ./test/test.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+  - ./node_modules/.bin/mocha ./test/test.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js

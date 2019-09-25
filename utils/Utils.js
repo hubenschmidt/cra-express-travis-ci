@@ -1,4 +1,5 @@
-export default class Util {
+// export default class Util {
+module.exports = class Util {
     constructor() {
       this.statusCode = null;
       this.type = null;
