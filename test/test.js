@@ -8,8 +8,6 @@ const chaiHttp = require("chai-http")
 const app = require('../server.js');
 require("chai/register-should")
 
-console.log(app)
-
 chai.use(chaiHttp);
 const { expect } = chai;
 
