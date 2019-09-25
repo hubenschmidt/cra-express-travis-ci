@@ -5,10 +5,11 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon --exec babel-node ./server.js",
-    "test": "export NODE_ENV=test &&  sequelize db:migrate:undo:all  && sequelize db:migrate  && nyc --require @babel/register  mocha ./test/test.js --timeout 20000 --exit",
+    "test": "export NODE_ENV=test &&  sequelize db:migrate:undo:all  && sequelize db:migrate  && nyc mocha ./test/test.js --timeout 20000 --exit",
+    "test-travis": "./node_modules/nyc/bin/wrap.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
-    "coveralls-coverage": "coveralls < lcov.info",
     "coverage": "nyc npm test && npm run generate-lcov && npm run coveralls-coverage",
+    "coveralls-coverage": "coveralls < lcov.info",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node -r esm server.js",
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
