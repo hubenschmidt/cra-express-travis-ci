@@ -6,10 +6,10 @@ module.exports = {
   //   use_env_variable: 'DATABASE_URL'
   // },
   development: {
-    username: "postgres",
-    password: null,
-    database: "cra_travis_ci_express",
-    host: "127.0.0.1",
+    username: process.env.DEVELOPMENT_DB_USERNAME,
+    password: process.env.DEVELOPMENT_DB_USERNAME,
+    database: process.env.DEVELOPMENT_DB_DATABASE,
+    host: process.env.DEVELOPMENT_DB_HOST,
     dialect: "postgres",
     operatorsAliases: false
   },
@@ -22,10 +22,11 @@ module.exports = {
     operatorsAliases: false
   },
   production: {
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
+    username: process.env.PRODUCTION_DB_USERNAME,
+    password: process.env.PRODUCTION_DB_PASSWORD,
+    database: process.env.PRODUCTION_DB_DATABASE,
+    host: process.env.PRODUCTION_DB_HOST,
+    URI: process.env.PRODUCTION_DATABASE_URL,
     dialect: "postgres",
     operatorsAliases: false
   }
