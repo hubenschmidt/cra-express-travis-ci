@@ -8,7 +8,7 @@ module.exports = {
   development: {
     username: "postgres",
     password: null,
-    database: "travis_ci_boilerplate",
+    database: "cra_travis_ci_express",
     host: "127.0.0.1",
     dialect: "postgres",
     operatorsAliases: false
@@ -16,7 +16,7 @@ module.exports = {
   test: {
     username: "postgres_test",
     password: null,
-    database: "travis_ci_boilerplate_test",
+    database: "ra_travis_ci_express_test",
     host: "127.0.0.1",
     dialect: "postgres",
     operatorsAliases: false
